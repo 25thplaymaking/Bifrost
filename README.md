@@ -26,6 +26,16 @@ The mod's source is not in this repository.
 Attach `console.log` and `script.log` from the session where it happened (zip the folder if the files are big), and
 any `crash.log` or `.mdmp` file.
 
+## Follow a report
+
+- The **[Bifrost project](https://github.com/users/25thplaymaking/projects/1)** shows every report on a board, from
+  Triage through Needs repro, Confirmed, In progress and Fixed in next to Released (or Won't fix), with its priority,
+  the part of Bifrost and the version it was seen in. Views: Board, All issues, Needs triage, Crashes, Next update,
+  Wishlist.
+- **[Milestones](../../milestones)** say which version a fix or feature is planned for: **2.0.6** (the next update),
+  **2.1** (the next feature update) or **Wishlist** (good ideas, not scheduled yet).
+- When a fix ships, its issue is closed and the update's notes on the Workshop page list it.
+
 ## Questions and ideas
 
 How-do-I questions, server setup help and loose ideas go in [Discussions](../../discussions):

@@ -1,6 +1,7 @@
 name: Feature request
 description: An idea or a change you would like in Bifrost.
 labels: ["enhancement", "needs triage"]
+projects: ["25thplaymaking/1"]
 body:
   - type: textarea
     id: idea

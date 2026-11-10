@@ -1,6 +1,7 @@
 name: Crash or server error
 description: The game or server crashes, will not start, or the log fills with errors.
 labels: ["critical", "needs triage"]
+projects: ["25thplaymaking/1"]
 body:
   - type: markdown
     attributes:

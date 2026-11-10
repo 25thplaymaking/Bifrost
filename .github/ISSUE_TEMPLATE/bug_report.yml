@@ -1,6 +1,7 @@
 name: Bug report
 description: Something in Bifrost does not work as it should.
 labels: ["bug", "needs triage"]
+projects: ["25thplaymaking/1"]
 body:
   - type: markdown
     attributes:

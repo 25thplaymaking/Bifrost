@@ -1,6 +1,7 @@
 name: Mod compatibility
 description: Bifrost and another mod do not work together.
 labels: ["mod compatibility", "needs triage"]
+projects: ["25thplaymaking/1"]
 body:
   - type: input
     id: other_mod
