@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and help
+    url: https://github.com/25thplaymaking/Bifrost/discussions/categories/q-a
+    about: How do I...? Ask here; other players and the team answer.
+  - name: Bifrost on the Workshop
+    url: https://reforger.armaplatform.com/workshop/6A0C2D6CE9809C6E
+    about: The mod page, its version and its changelog.

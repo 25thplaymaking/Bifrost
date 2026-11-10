@@ -1,0 +1,105 @@
+name: Bug report
+description: Something in Bifrost does not work as it should.
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. One problem per report, please; search the open issues first in case it is already known.
+        A crash, a server that will not start or an error that floods the log goes in **Crash or server error** instead.
+  - type: input
+    id: bifrost_version
+    attributes:
+      label: Bifrost version
+      description: Shown on the Workshop page and in the game's mod list (for example 2.0.5).
+      placeholder: "2.0.5"
+    validations:
+      required: true
+  - type: input
+    id: game_version
+    attributes:
+      label: Arma Reforger version
+      description: Main menu, bottom corner (for example 1.9.0.37).
+      placeholder: "1.9.0.37"
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did it happen?
+      options:
+        - Dedicated server (as a player)
+        - Dedicated server (as the Game Master)
+        - Hosted game (listen server)
+        - Single player / Game Master offline
+        - Workbench
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of Bifrost?
+      options:
+        - Arsenal / loadouts / gear placement
+        - Game Master console and orders
+        - Bot AI and squad behaviour
+        - Helicopters, paradrops, convoys
+        - Air support (MQ-9, AC-130, E-3, MQ-99)
+        - ATAK phone, helmet camera, drones
+        - Bifrost OS laptop, smart board, screens and videos
+        - Kill chain (targets, fires, EW)
+        - Ready Room
+        - Saving and restarts (persistence)
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you saw. Screenshots or a short clip help a lot (drag them in here).
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen again
+      placeholder: |
+        1. Open the Game Master console
+        2. Place ...
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: often
+    attributes:
+      label: How often?
+      options:
+        - Every time
+        - Sometimes
+        - Once so far
+    validations:
+      required: true
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other mods loaded
+      description: The full mod list, or "Bifrost only". Many problems only show with another mod.
+      placeholder: "Bifrost only"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: |
+        Attach `script.log` and `console.log` from the session where it happened (zip them if they are big).
+        Player / hosted game: `Documents\My Games\ArmaReforger\logs\<date>\`.
+        Dedicated server: the `logs` folder inside the server's `-profile` folder.
+      placeholder: Drag the files here.

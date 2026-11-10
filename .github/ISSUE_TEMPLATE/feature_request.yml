@@ -1,0 +1,40 @@
+name: Feature request
+description: An idea or a change you would like in Bifrost.
+labels: ["enhancement", "needs triage"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: Describe it as you would use it in a mission.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it matter to your group?
+      description: The situation where you miss it today.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of Bifrost?
+      options:
+        - Arsenal / loadouts / gear placement
+        - Game Master console and orders
+        - Bot AI and squad behaviour
+        - Helicopters, paradrops, convoys
+        - Air support (MQ-9, AC-130, E-3, MQ-99)
+        - ATAK phone, helmet camera, drones
+        - Bifrost OS laptop, smart board, screens and videos
+        - Kill chain (targets, fires, EW)
+        - Ready Room
+        - Something new
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: References
+      description: Real-world references, videos, or another game or mod that does it well.

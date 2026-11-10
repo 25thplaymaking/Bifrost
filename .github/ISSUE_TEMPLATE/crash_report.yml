@@ -1,0 +1,68 @@
+name: Crash or server error
+description: The game or server crashes, will not start, or the log fills with errors.
+labels: ["critical", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Logs are what lets us fix these. Please attach them; without them a crash report usually cannot be traced.
+  - type: input
+    id: bifrost_version
+    attributes:
+      label: Bifrost version
+      placeholder: "2.0.5"
+    validations:
+      required: true
+  - type: input
+    id: game_version
+    attributes:
+      label: Arma Reforger version
+      placeholder: "1.9.0.37"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem?
+      options:
+        - The server will not start (crash or "Too many instructions per function" at start-up)
+        - The game or server crashes during play
+        - Errors repeat in the log (script errors, NULL pointer, replication)
+        - Performance drops sharply
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where?
+      options:
+        - Dedicated server
+        - Hosted game (listen server)
+        - Single player
+        - Workbench
+    validations:
+      required: true
+  - type: textarea
+    id: mods
+    attributes:
+      label: Full mod list
+      description: Server start-up problems almost always depend on the whole list, so paste all of it (from the server config or the mod manager).
+    validations:
+      required: true
+  - type: textarea
+    id: when
+    attributes:
+      label: When does it happen?
+      description: At start-up, when a mission loads, after a restart, when something specific is done?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and crash files
+      description: |
+        Attach `console.log`, `script.log` and any `crash.log` or `.mdmp` (zip them).
+        Player / hosted game: `Documents\My Games\ArmaReforger\logs\<date>\`.
+        Dedicated server: the `logs` folder inside the server's `-profile` folder.
+    validations:
+      required: true
